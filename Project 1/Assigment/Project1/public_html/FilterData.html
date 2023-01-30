@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+        <title>Filter Invoices</title>
+    </head>
+    <body>
+        <h1>
+            Filter Data of Invoices
+        </h1><form name="FilterDataForm" action="Filter" method="GET">
+            <h4>
+                Activation Date:
+            </h4>
+            <p>
+               FROM <input type="text" name="FromActDat"/> TO <input type="text" name="ToActDat"/>
+            </p>
+            <p>
+                &nbsp;
+            </p>
+            <h4>
+                Net Amount:
+            </h4>
+            <p>
+                FROM
+                <input type="text" name="FromNetAmt"/>TO<input type="text" name="ToNetAmt"/>
+            </p>
+            <p>
+                &nbsp;
+            </p>
+            <h4>
+                Actions:
+            </h4>
+            <p>
+                &nbsp;
+            </p>
+            <input type="reset" name="RESET"/>
+            <input type="submit" name="SUBMIT"/>
+        </form>
+        <br><a href=\Project1\home>Go back home(whole table)?</a> &nbsp;&nbsp; | &nbsp;&nbsp; <a href="/Project1/filter?FromActDat=2017-01-01&ToActDat=2020-01-01&FromNetAmt=1000&ToNetAmt=3000&SUBMIT=Submit+Query">Filter using sample constraints?</a>
+    </body>
+</html>
